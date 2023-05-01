@@ -1,3 +1,5 @@
+$dark-background: #142026;
+
 :host {
   display: grid;
   width: 100%;
@@ -5,10 +7,13 @@
 
 
 .footer-content {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1.2fr 4fr;
   gap: 2rem;
   width: 100%;
+  padding: 2rem;
+  background: $dark-background;
+  color: white;
 }
 
 .footer-table {
@@ -16,4 +21,24 @@
   grid-auto-flow: column;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1rem;
+
+
+  p {
+    gap: 1rem;
+    display: flex;
+    color: #03a776;
+    padding: 1rem;
+    border-left: 2px solid #03a776;
+  }
+  ul {
+    display: grid;
+    gap: .6rem;
+    padding-left: 1rem;
+    font-size: .8rem;
+  }
+}
+
+.desc {
+  font-size: 1.2rem;
+  font-weight: 500;
 }
