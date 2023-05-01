@@ -1,0 +1,15 @@
+<button #buttonSwitcher
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+        (click)="toggleNavBar(primaryNavigation, buttonSwitcher)">
+</button>
+<nav>
+  <ul class="primary-navigation flex" #primaryNavigation data-visible="false">
+    <li *ngFor="let item of menuItems">
+      <a [routerLink]="item.routerLink">
+        {{ item.displayedValue }}
+      </a>
+    </li>
+  </ul>
+</nav>

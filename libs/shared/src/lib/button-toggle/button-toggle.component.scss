@@ -1,0 +1,24 @@
+$border-radius: .5rem;
+$border-color: #03a776;
+
+mat-button-toggle-group {
+  border-radius: $border-radius;
+}
+
+.mat-button-toggle-checked {
+
+  background-color: rgba(3, 167, 118, 0.32);
+  border: 2px $border-color solid !important;
+  font-size: 1.05rem;
+  font-weight: bold;
+
+  &:first-child {
+    border-bottom-left-radius: $border-radius;
+    border-top-left-radius: $border-radius;
+  }
+
+  &:last-child {
+    border-bottom-right-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+  }
+}

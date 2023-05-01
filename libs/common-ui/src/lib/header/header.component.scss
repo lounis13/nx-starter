@@ -1,0 +1,25 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+}
+
+.logo-container {
+  gap: 1rem;
+  display: flex;
+  padding-left: 2rem;
+  align-items: flex-end;
+
+  svg {
+    height: 2.5rem;
+    fill: #03a776;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+}
+
+
